@@ -4,15 +4,15 @@
   become: yes
 
   tasks:
-  - name: install docker prerequisites
-    pip:
-      name: docker
+    - name: install docker prerequisites
+      pip:
+        name: docker
 
 
-  - name: launch the apache-simple container on the site-b nodes
-    docker_containerer:
-      name: apache-simple
-      image: quay.io/mayatonia/ansible-for-devops-siteb
-      ports:
-        - "8080:8080"
+    - name: launch the apache-simple container on the site-b nodes
+      docker_containerer:
+        name: apache-simple
+        image: quay.io/mayatonia/ansible-for-devops-siteb
+        ports:
+            - "8080:8080"
 
