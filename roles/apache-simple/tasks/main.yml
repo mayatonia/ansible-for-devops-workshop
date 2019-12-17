@@ -19,7 +19,7 @@
 
 - name: Ensure latest httpd.conf file is present for Container
   template:
-    src: httpd.conf.j2
+    src: templates/httpd.conf.j2
     dest: /home/student18/ansible-for-devops-workshop/siteb/etc/httpd/conf/httpd.conf
     tags:
      - container
