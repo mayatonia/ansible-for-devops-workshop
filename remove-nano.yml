@@ -1,0 +1,10 @@
+---
+- name: Remove NANO
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Remove Nano
+    yum:
+      name: nano
+      state: absent
