@@ -7,7 +7,7 @@
   - name: install docker prerequisites
     pip:
       name: docker
-  - name: launch nginx-lb container on lb node      docker_container:
+  - name: launch nginx-lb container on lb node  
     docker_container:
       name: nginx-lb
       image: quay.io/mayatonia/ansible-for-devops-nginx-lb
